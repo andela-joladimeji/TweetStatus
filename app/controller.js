@@ -9,7 +9,7 @@ module.exports.tweet = function(req, res){
   });
   TwitterClient.post('statuses/update', {status: tweetToPost})
   .then(function(tweet){
-    return res.send({data:"Sucessfully Tweeted"})
+    return res.send("Sucessfully Tweeted")
   }).catch(function(e){
     console.log(e)
   });
