@@ -4,7 +4,8 @@
 Run
 
 ```
-npm install
+1. npm install
+2. bower install
 ```
 
 ### This app requires a .env file
