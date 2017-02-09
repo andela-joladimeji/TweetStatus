@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="TweetStatus">
+<head>
+  <title></title>
+</head>
+<body ng-controller="TweetStatusCtlr">
+<h1>TWEET YOUR STATUS</h1>
+<form>
+  <input type="text" ng-model="tweetToPost">
+  <button ng-click="postTweet(tweetToPost)">Submit Tweet</button>
+</form>
+<p ng-if="success">{{success}}</p>
+<p ng-if="error">{{error}}</p>
+ <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+ <script type="text/javascript" src="app.js"></script>
+ <script type="text/javascript" src="scripts/controllers/tweet-status-controller.js"></script>
+
+</body>
+</html>
